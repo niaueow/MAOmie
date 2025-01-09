@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			href="./output.css"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="node_modules/aos/dist/aos.css" />
+		<script src="node_modules/aos/dist/aos.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>MAOmie</title>
+	</head>
+	<body class="bg-creamy">
+		<nav class="p-4 bg-rich flex flex-row shadow-lg justify-between items-center z-50 sticky top-0">
+			<a href="#"
+				><img
+					src="/public/maomie.png"
+					alt="MAOmie"
+					class="h-10 w-10 justify-start items-start" />
+			</a>
+			<ul class="flex space-x-14 text-creamy/70 font-medium mx-auto">
+				<li class="hover:font-semibold hover:text-creamy transition duration-400 font-bold"><a href="#home">Home</a></li>
+				<li class="hover:font-semibold hover:text-creamy transition duration-400"><a href="#restos">Restos</a></li>
+				<li class="hover:font-semibold hover:text-creamy transition duration-400"><a href="#howitworks">How it Works</a></li>
+				<li class="hover:font-semibold hover:text-creamy transition duration-400"><a href="#reviews">Reviews</a></li>
+			</ul>
+		</nav>
+
+		<div class="">
+			<section
+				id="home"
+				data-aos="fade-up"
+				data-aos-delay="200"
+				data-aos-duration="1000"
+				class="flex flex-row justify-between items-center space-y-5 mx-auto my-16 mt-32">
+				<div class="flex flex-col justify-center items-center gap-y-5 w-6/12">
+					<h1 class="font-bold text-3xl text-rich text-center w-9/12">Craving for Ramen? We Deliver It Hot and Fresh!</h1>
+					<div class="items-center justify-center space-y-6 mt-2 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+						<a
+							href="#"
+							class="w-full sm:w-auto bg-black hover:bg-black/85 transition duration-500 text-white rounded-xl inline-flex items-center justify-center px-4 py-2.5">
+							<svg
+								class="me-3 w-7 h-7"
+								aria-hidden="true"
+								focusable="false"
+								data-prefix="fab"
+								data-icon="apple"
+								role="img"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 384 512">
+								<path
+									fill="currentColor"
+									d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path>
+							</svg>
+							<div class="text-left rtl:text-right">
+								<div class="mb-1 text-xs">Download on the</div>
+								<div class="-mt-1 font-sans text-sm font-semibold">App Store</div>
+							</div>
+						</a>
+						<a
+							href="#"
+							class="w-full sm:w-auto bg-black hover:bg-black/85 transition duration-500 text-white rounded-xl inline-flex items-center justify-center px-4 py-2.5">
+							<svg
+								class="me-3 w-7 h-7"
+								aria-hidden="true"
+								focusable="false"
+								data-prefix="fab"
+								data-icon="google-play"
+								role="img"
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 512 512">
+								<path
+									fill="currentColor"
+									d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path>
+							</svg>
+							<div class="text-left rtl:text-right">
+								<div class="mb-1 text-xs">Get in on</div>
+								<div class="-mt-1 font-sans text-sm font-semibold">Google Play</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<img
+					src="/public/ramen.gif"
+					alt="Ramen"
+					class="w-1/3 justify-end items-end mx-auto" />
+			</section>
+
+			<section
+				id="restos"
+				data-aos="fade-up"
+				data-aos-delay="200"
+				data-aos-duration="1000"
+				class="my-32">
+				<h1 class="font-bold flex flex-col text-3xl text-rich text-center mb-12">Restaurants Available</h1>
+				<div class="space-y-8">
+					<div class="flex flex-row justify-between items-center mx-auto">
+						<img
+							src="/public/marugame.png"
+							alt="Marugame"
+							class="w-1/6 justify-center items-center mx-auto border-2 border-rich rounded-3xl hover:-translate-y-5 transition duration-500" />
+						<img
+							src="/public/futago.png"
+							alt="Futago"
+							class="w-1/6 justify-center items-center mx-auto border-2 border-rich rounded-3xl hover:-translate-y-5 transition duration-500" />
+						<img
+							src="/public/holynoodle.jpg"
+							alt="Holy Noodle"
+							class="w-1/6 justify-center items-center mx-auto border-2 border-rich rounded-3xl hover:-translate-y-5 transition duration-500" />
+						<img
+							src="/public/udon house.png"
+							alt="Udon House"
+							class="w-1/6 justify-center items-center mx-auto border-2 border-rich rounded-3xl hover:-translate-y-5 transition duration-500" />
+					</div>
+					<div class="flex flex-row justify-between items-center mx-auto">
+						<img
+							src="/public/itsuki.png"
+							alt="itsuki"
+							class="w-1/6 justify-center items-center mx-auto border-2 border-rich rounded-3xl hover:-translate-y-5 transition duration-500" />
+						<img
+							src="/public/pasta,bitte.jpg"
+							alt="Pasta Bitte"
+							class="w-1/6 justify-center items-center mx-auto border-2 border-rich rounded-3xl hover:-translate-y-5 transition duration-500" />
+						<img
+							src="/public/taeyangsung.jpg"
+							alt="Taeyangsung"
+							class="w-1/6 justify-center items-center mx-auto border-2 border-rich rounded-3xl hover:-translate-y-5 transition duration-500" />
+						<img
+							src="/public/tamoya.png"
+							alt="Tamoya"
+							class="w-1/6 justify-center items-center mx-auto border-2 border-rich rounded-3xl hover:-translate-y-5 transition duration-500" />
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="howitworks"
+				data-aos="fade-up"
+				data-aos-delay="200"
+				data-aos-duration="1000"
+				class="my-32">
+				<h1 class="font-bold text-3xl text-rich text-center mb-12">How it Works</h1>
+				<div class="flex flex-row justify-between items-center mx-auto">
+					<ul class="mx-auto justify-between items-center space-y-3">
+						<li class="flex flex-row justify-start items-center mx-auto font-semibold text-rich text-lg">1. Browse the menu on the MAOmie app</li>
+						<li class="flex flex-row justify-start items-center mx-auto font-semibold text-rich text-lg">2. Select your favorite ramen and customize it</li>
+						<li class="flex flex-row justify-start items-center mx-auto font-semibold text-rich text-lg">3. Order and relax while we deliver straight to your door</li>
+					</ul>
+
+					<img
+						src="/public/delivery.svg"
+						alt="Delivery"
+						class="w-3/12 flex justify-end items-end mx-auto" />
+				</div>
+			</section>
+
+			<section
+				id="reviews"
+				data-aos="fade-up"
+				data-aos-delay="200"
+				data-aos-duration="1000"
+				class="my-32">
+				<h1 class="font-bold text-3xl text-rich text-center mb-12">What They Say About Us</h1>
+				<div class="flex flex-row justify-between items-center mx-auto gap-x-3">
+					<!-- Review 1 -->
+					<div class="flex w-full p-4 max-w-lg flex-col rounded-xl bg-white shadow-sm border-2 border-rich my-6">
+						<div class="flex items-center gap-4 text-slate-800">
+							<img
+								src="/public/NINGNING.jpg"
+								alt="Ningsih"
+								class="relative inline-block h-[70px] w-[70px] rounded-full object-cover object-center" />
+							<div class="flex w-full flex-col">
+								<div class="flex items-center justify-between">
+									<h5 class="text-xl font-semibold text-black">Ning Ning</h5>
+									<div class="flex items-center gap-0 5">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+									</div>
+								</div>
+								<p class="text-xs font-semibold text-black mt-0.5">Student</p>
+							</div>
+						</div>
+						<div class="mt-6">
+							<p class="text-base text-black font-medium leading-normal">&quot;MAOmie makes finding the best ramen in town so easy! I love being able to order from my favorite local restaurants with just a few clicks.&quot;</p>
+						</div>
+					</div>
+					<!-- End of Review 1 -->
+
+					<!-- Review 2 -->
+					<div class="flex w-full p-4 max-w-lg flex-col rounded-xl bg-white shadow-sm border-2 border-rich my-6">
+						<div class="flex items-center gap-4 text-slate-800">
+							<img
+								src="/public/markliw.jpg"
+								alt="Mark Lee"
+								class="relative inline-block h-[70px] w-[70px] rounded-full object-cover object-center" />
+							<div class="flex w-full flex-col">
+								<div class="flex items-center justify-between">
+									<h5 class="text-xl font-semibold text-black">Mark Lee</h5>
+									<div class="flex items-center gap-0 5">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+									</div>
+								</div>
+								<p class="text-xs font-semibold text-black mt-0.5">Foodie</p>
+							</div>
+						</div>
+						<div class="mt-6">
+							<p class="text-base text-black font-medium leading-normal">&quot;I used to struggle finding good noodle places near me, but MAOmie changed that. Now I can enjoy authentic ramen or udon anytime I want!&quot;</p>
+						</div>
+					</div>
+					<!-- End of Review 2 -->
+
+					<!-- Review 3 -->
+					<div class="flex w-full p-4 max-w-lg flex-col rounded-xl bg-white shadow-sm border-2 border-rich my-6">
+						<div class="flex items-center gap-4 text-slate-800">
+							<img
+								src="/public/chaeryeong lg.jpg"
+								alt="Chaeryong"
+								class="relative inline-block h-[70px] w-[70px] rounded-full object-cover object-center" />
+							<div class="flex w-full flex-col">
+								<div class="flex items-center justify-between">
+									<h5 class="text-xl font-semibold text-black">Chaeryong</h5>
+									<div class="flex items-center gap-0 5">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+											fill="currentColor"
+											class="w-5 h-5 text-yellow">
+											<path
+												fill-rule="evenodd"
+												d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+												clip-rule="evenodd"></path>
+										</svg>
+									</div>
+								</div>
+								<p class="text-xs font-semibold text-black mt-0.5">Noodle Enthusiast</p>
+							</div>
+						</div>
+						<div class="mt-6">
+							<p class="text-base text-black font-medium leading-normal">&quot;MAOmie helped me find restaurants I didn’t even know existed! The app is user-friendly, and the reviews helped me choose the best dishes.&quot;</p>
+						</div>
+					</div>
+					<!-- End of Review 3 -->
+				</div>
+			</section>
+
+			<section
+				id="footer"
+				class="mt-32">
+				<footer class="flex flex-row justify-between items-center bg-rich font-medium text-creamy/70 p-8">
+					<nav class="grid grid-flow-col gap-4">
+						<a
+							class="hover:text-creamy"
+							href="#home"
+							>Home</a
+						>
+						<a
+							class="hover:text-creamy"
+							href="#restos"
+							>Restos</a
+						>
+						<a
+							class="hover:text-creamy"
+							href="#howitworks"
+							>How it Works</a
+						>
+						<a
+							class="hover:text-creamy"
+							href="#reviews"
+							>Reviews</a
+						>
+					</nav>
+					<img
+						width="50"
+						height="50"
+						class="hover:-translate-y-3 transition duration-500"
+						src="https://img.icons8.com/ios-filled/50/FFFFFF/figma--v1.png"
+						alt="figma--v1"
+						href="https://www.figma.com/" />
+					<aside>
+						<p>
+							Copyright © 2025 -
+							<a
+								href="https://github.com/niaueow"
+								target="_blank"
+								class="hover:text-white"
+								>niaueow</a
+							>
+						</p>
+					</aside>
+				</footer>
+			</section>
+		</div>
+	</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+	AOS.init();
+</script>
